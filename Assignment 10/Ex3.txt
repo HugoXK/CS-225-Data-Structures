@@ -1,0 +1,10 @@
+(i) Since there is exactly one edge between every two vertices, hence if we have N vertices, then the total number of edges is N choose 2, which is N(N-1)/2.
+
+(ii) When n is not positive, sure there is no tournament can be created;
+     When n is a positive integer, there are 2 cases to be discussed:
+     First, if n can not be expressed as m(m-1)/2, where m is a positive integer and stand for the number of vertices, then obviously n edges cannot creat any tournaments.
+     Second, if n can be expressed as m(m-1)/2, where m is a positive integer and stand for the number of vertices, 
+     then at least one tournament can be created. Since the graph is direct, for any vertice pair (u, v), there is exactly one edge from u to v or from v to u.
+     Therefore, there are 2 possible choices for the directions of edges, so 2^n different tournaments can be created.
+(iii) No. Some of the tournaments do not have cycles, which can be topologically sorted, e.g. 1->2, 1->3, 2->3 can be sorted as 1->2->3.
+However, some tournaments do have cycles, which cannot be topologically sorted, e.g. 1->2, 2->3, 3->1 can not be sorted.
